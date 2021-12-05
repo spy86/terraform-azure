@@ -8,3 +8,4 @@
 
 - [Azure Container Registry](azure_acr/README.md)
 - [Azure Automation Account](azure_automation_account/README.md)
+- [Azure Linux VM](azure_linux_vm/README.md)
