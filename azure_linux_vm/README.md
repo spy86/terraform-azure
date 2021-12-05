@@ -41,7 +41,7 @@ No modules.
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which to create the resources. Changing this forces a new resource to be created. | `string` | n/a | yes |
 | <a name="input_subnet_name"></a> [subnet\_name](#input\_subnet\_name) | The name of the subnet. Changing this forces a new resource to be created. | `string` | n/a | yes |
 | <a name="input_tag_environment"></a> [tag\_environment](#input\_tag\_environment) | A mapping of tags to assign to the resource. | `string` | `"dev"` | no |
-| <a name="input_tag_owner"></a> [tag\_owner](#input\_tag\_owner) | A mapping of tags to assign to the resource. | `string` | `"Test organization"` | no |
+| <a name="input_resource_owner"></a> [tag\_owner](#input\_tag\_owner) | A mapping of tags to assign to the resource. | `string` | `"Test organization"` | no |
 | <a name="input_vnet_name"></a> [vnet\_name](#input\_vnet\_name) | The name of the virtual network to which to attach the subnet. Changing this forces a new resource to be created. | `string` | n/a | yes |
 | <a name="input_vnet_resource_group_name"></a> [vnet\_resource\_group\_name](#input\_vnet\_resource\_group\_name) | The name of the resource group in which to create the subnet. Changing this forces a new resource to be created. | `string` | n/a | yes |
 

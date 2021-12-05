@@ -11,7 +11,7 @@ variable "tag_environment" {
   type = "string"
   default = "dev"
 }
-variable "tag_owner" {
+variable "resource_owner" {
   description = "A mapping of tags to assign to the resource."
   type = "string"
   default = "Test organization"
