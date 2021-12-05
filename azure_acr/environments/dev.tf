@@ -4,11 +4,12 @@
 environment = "dev"
 tag_environment = "dev"
 resource_owner = "Test organization"
+region = "weu"
 ###########################
 # Resource groups vars
 ###########################
-rg_location = "West Europe"
-rg_name = "weu-dev-rg"
+resource_group_location = "West Europe"
+resource_group_name = "weu-dev-rg"
 ###########################
 # ACR vars
 ###########################

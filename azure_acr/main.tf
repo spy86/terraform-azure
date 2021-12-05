@@ -1,4 +1,7 @@
-provider "azurem" {}
+provider "azurerm" {
+
+features {}
+}
 
 data "azurem_client_config" "current" {}
 

@@ -16,6 +16,11 @@ variable "resource_owner" {
   type = "string"
   default = "Test organization"
 }
+variable "region" {
+  description = "Region in which resources are deployed"
+  type = "string"
+  default = "weu"
+}
 ###########################
 # Resource groups vars
 ###########################
