@@ -1,13 +1,16 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.15 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | 2.88.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 2.88.1 |
 
 ## Modules
 
@@ -17,9 +20,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azurerm_redis_cache.main](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/redis_cache) | resource |
-| [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config) | data source |
-| [azurerm_resource_group.rg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/resource_group) | data source |
+| [azurerm_redis_cache.main](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/redis_cache) | resource |
+| [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/data-sources/client_config) | data source |
+| [azurerm_resource_group.rg](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/data-sources/resource_group) | data source |
 
 ## Inputs
 
@@ -53,15 +56,4 @@ No modules.
 | <a name="output_redis_cache_secondary_access_key"></a> [redis\_cache\_secondary\_access\_key](#output\_redis\_cache\_secondary\_access\_key) | The Secondary Access Key for the Redis Instance |
 | <a name="output_redis_cache_secondary_connection_string"></a> [redis\_cache\_secondary\_connection\_string](#output\_redis\_cache\_secondary\_connection\_string) | The secondary connection string of the Redis Instance. |
 | <a name="output_redis_cache_ssl_port"></a> [redis\_cache\_ssl\_port](#output\_redis\_cache\_ssl\_port) | The SSL Port of the Redis Instance |
-
-## How to use ?
-
-### Terraform plan
-```
-terraform apply -var-file="environments/dev.tfvars"
-```
-### Terraform apply
-```
-terraform plan -var-file="environments/dev.tfvars"
-```
 <!-- END_TF_DOCS -->
