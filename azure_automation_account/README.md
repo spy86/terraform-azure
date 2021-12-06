@@ -1,13 +1,15 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | 2.88.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurem"></a> [azurem](#provider\_azurem) | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 2.88.1 |
 
 ## Modules
 
@@ -17,12 +19,12 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azurem_resource_group.rg](https://registry.terraform.io/providers/hashicorp/azurem/latest/docs/resources/resource_group) | resource |
-| [azurerm_automation_account.exampleautomation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/automation_account) | resource |
-| [azurerm_automation_job_schedule.example](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/automation_job_schedule) | resource |
-| [azurerm_automation_schedule.hour](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/automation_schedule) | resource |
-| [azurerm_automation_schedule.runbook](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/automation_schedule) | resource |
-| [azurem_client_config.current](https://registry.terraform.io/providers/hashicorp/azurem/latest/docs/data-sources/client_config) | data source |
+| [azurerm_automation_account.exampleautomation](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/automation_account) | resource |
+| [azurerm_automation_job_schedule.example](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/automation_job_schedule) | resource |
+| [azurerm_automation_schedule.hour](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/automation_schedule) | resource |
+| [azurerm_automation_schedule.runbook](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/automation_schedule) | resource |
+| [azurerm_resource_group.rg](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/resource_group) | resource |
+| [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/data-sources/client_config) | data source |
 
 ## Inputs
 
@@ -43,16 +45,4 @@ No modules.
 |------|-------------|
 | <a name="output_automation_schedule_start_time"></a> [automation\_schedule\_start\_time](#output\_automation\_schedule\_start\_time) | Start time of the schedule. |
 | <a name="output_automation_schedule_week_interval"></a> [automation\_schedule\_week\_interval](#output\_automation\_schedule\_week\_interval) | The number of frequencys between runs. |
-
-## How to use ?
-
-### Terraform plan
-```
-terraform apply -var-file="environments/dev.tfvars"
-```
-### Terraform apply
-```
-terraform plan -var-file="environments/dev.tfvars"
-```
-
 <!-- END_TF_DOCS -->
