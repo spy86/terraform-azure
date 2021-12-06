@@ -11,4 +11,5 @@ terraform {
         container_name = "tfstate"
         key = "acr-terraform.tfstate"
   }
+required_version = ">= 0.15"
 }
