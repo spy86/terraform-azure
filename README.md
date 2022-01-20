@@ -11,3 +11,4 @@
 - [Azure Linux VM](azure_linux_vm/README.md)
 - [Azure Cache for Redis](azure_cache_for_redis/README.md)
 - [Azure Sql Server and database](azure_sql_server_and_database/README.md)
+- [Azure Virtual Network](azure_virtual_network/README.md)
