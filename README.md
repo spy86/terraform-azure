@@ -12,3 +12,4 @@
 - [Azure Cache for Redis](azure_cache_for_redis/README.md)
 - [Azure Sql Server and database](azure_sql_server_and_database/README.md)
 - [Azure Virtual Network](azure_virtual_network/README.md)
+- [Azure Kubernetes Service + Application Gateway Ingress Controller](azure_aks_with_agic/README.md)
