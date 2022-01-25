@@ -20,11 +20,11 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azurerm_monitor_diagnostic_setting.examplediagnostic](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/monitor_diagnostic_setting) | resource |
-| [azurerm_mssql_database.exampledatabase](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/mssql_database) | resource |
-| [azurerm_mssql_database_extended_auditing_policy.example](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/mssql_database_extended_auditing_policy) | resource |
-| [azurerm_mssql_server.examplesqlserver](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/mssql_server) | resource |
-| [azurerm_mssql_server_extended_auditing_policy.example](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/mssql_server_extended_auditing_policy) | resource |
+| [azurerm_monitor_diagnostic_setting.main](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/monitor_diagnostic_setting) | resource |
+| [azurerm_mssql_database.main](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/mssql_database) | resource |
+| [azurerm_mssql_database_extended_auditing_policy.main](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/mssql_database_extended_auditing_policy) | resource |
+| [azurerm_mssql_server.main](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/mssql_server) | resource |
+| [azurerm_mssql_server_extended_auditing_policy.main](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/resources/mssql_server_extended_auditing_policy) | resource |
 | [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/data-sources/client_config) | data source |
 | [azurerm_log_analytics_workspace.law](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/data-sources/log_analytics_workspace) | data source |
 | [azurerm_resource_group.rg](https://registry.terraform.io/providers/hashicorp/azurerm/2.88.1/docs/data-sources/resource_group) | data source |
@@ -41,7 +41,7 @@ No modules.
 | <a name="input_log_analytics_workspace_resource_group_name"></a> [log\_analytics\_workspace\_resource\_group\_name](#input\_log\_analytics\_workspace\_resource\_group\_name) | The name of the resource group in which the Log Analytics workspace is located in. | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | Region in which resources are deployed | `string` | `"weu"` | no |
 | <a name="input_resource_group_location"></a> [resource\_group\_location](#input\_resource\_group\_location) | Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created. | `string` | `"West Europe"` | no |
-| <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which to create the Container Registry. Changing this forces a new resource to be created. | `string` | n/a | yes |
+| <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which to create the SQL server and databases. Changing this forces a new resource to be created. | `string` | n/a | yes |
 | <a name="input_resource_owner"></a> [resource\_owner](#input\_resource\_owner) | A mapping of tags to assign to the resource. | `string` | `"Test organization"` | no |
 | <a name="input_sql_server_administrator_login"></a> [sql\_server\_administrator\_login](#input\_sql\_server\_administrator\_login) | Administrator login for SQL server | `string` | `"admin"` | no |
 | <a name="input_sql_server_administrator_login_password"></a> [sql\_server\_administrator\_login\_password](#input\_sql\_server\_administrator\_login\_password) | Administrator password for SQL server | `string` | n/a | yes |

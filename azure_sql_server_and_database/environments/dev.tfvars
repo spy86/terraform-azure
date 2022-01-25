@@ -25,5 +25,5 @@ database_zone_redundant = "true"
 ###########################
 # Log Analitycs Workspace vars
 ###########################
-log_analytics_workspace_name = "test-weu-law01"
+log_analytics_workspace_name = "test"
 log_analytics_workspace_resource_group_name = "weu-dev-rg"

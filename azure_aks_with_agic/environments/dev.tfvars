@@ -15,7 +15,7 @@ resource_group_name = "weu-dev-rg"
 ###################################################################
 subnet_name = "Subnet-1"
 vnet_name = "dev-virtualNetwork1-weu-vnet"
-vnet_rg_name = "weu-test-rg"
+vnet_rg_name = "weu-dev-rg"
 network_plugin = "kubenet"
 network_policy = "azure"
 service_cidr = "172.16.2.0/24"

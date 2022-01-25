@@ -1,5 +1,5 @@
 resource "azurerm_automation_schedule" "hour" {
-  name                    = "${var.environment}-${var.automation_account_name}-${var.weu}-hour"
+  name                    = "${var.environment}-${var.automation_account_name}-${var.region}-hour"
   resource_group_name     = "${data.azurerm_resource_group.rg.name}"
   automation_account_name = "${azurerm_automation_account.example.name}"
   frequency               = "Hour"

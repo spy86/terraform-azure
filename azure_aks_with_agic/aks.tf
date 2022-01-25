@@ -1,5 +1,5 @@
 resource "azurerm_kubernetes_cluster" "aks" {
-  name                = "${var.environment}-${var.cluster_name}-aks"
+  name                = "${var.environment}-${var.cluster_name}-${var.region}-aks"
   location            = "${data.azurerm_resource_group.rg.location}"
   resource_group_name = "${data.azurerm_resource_group.rg.name}"
   dns_prefix          = "${var.environment}-${var.cluster_name}"
@@ -65,7 +65,7 @@ resource "random_id" "log_analytics_workspace_name_suffix" {
 
 resource "azurerm_log_analytics_workspace" "main" {
   count               = "${var.enable_log_analytics_workspace}" ? 1 : 0
-  name                = "${var.cluster_name}-${random_id.log_analytics_workspace_name_suffix.dec}"
+  name                = "${var.cluster_name}-${random_id.log_analytics_workspace_name_suffix.dec}-${var.region}-log"
   location            = "${data.azurerm_resource_group.rg.location}"
   resource_group_name = "${data.azurerm_resource_group.rg.name}"
   sku                 = "${var.log_analytics_workspace_sku}"

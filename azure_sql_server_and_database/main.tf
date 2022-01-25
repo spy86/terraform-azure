@@ -7,6 +7,6 @@ data "azurerm_resource_group" "rg" {
 }
 
 data "azurerm_log_analytics_workspace" "law" {
-  name                = "${var.log_analytics_workspace_name}"
+  name                = "${var.log_analytics_workspace_name}-${var.region}-law"
   resource_group_name = "${var.log_analytics_workspace_resource_group_name}"
 }

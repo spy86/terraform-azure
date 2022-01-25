@@ -9,4 +9,4 @@ region = "weu"
 # Resource groups vars
 ###########################
 resource_group_location = "West Europe"
-resource_group_name = "Test"
+resource_group_name = "test"

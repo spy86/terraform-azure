@@ -44,5 +44,5 @@ No modules.
 | <a name="output_admin_password"></a> [admin\_password](#output\_admin\_password) | The Password associated with the Container Registry Admin account |
 | <a name="output_admin_username"></a> [admin\_username](#output\_admin\_username) | The Username associated with the Container Registry Admin account |
 | <a name="output_id"></a> [id](#output\_id) | The ID of the Container Registry. |
-| <a name="output_login_server"></a> [login\_server](#output\_login\_server) | The URL that can be used to log into the container registry. |
+| <a name="output_login_server"></a> [login\_server](#output\_login\_server) | The URL that can be used to log into the Container Registry. |
 <!-- END_TF_DOCS -->

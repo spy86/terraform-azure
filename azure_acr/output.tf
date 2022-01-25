@@ -4,7 +4,7 @@ output "id" {
   sensitive = false
 }
 output "login_server" {
-  description = "The URL that can be used to log into the container registry."
+  description = "The URL that can be used to log into the Container Registry."
   value       = "${azurerm_container_registry.main.login_server}"
   sensitive = false
 }

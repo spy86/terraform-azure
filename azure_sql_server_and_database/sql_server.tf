@@ -1,4 +1,4 @@
-resource "azurerm_mssql_server" "examplesqlserver" {
+resource "azurerm_mssql_server" "main" {
   name                         = "${var.environment}-${var.sql_server_name}-${var.region}-sqlserv"
   resource_group_name          = "${data.azurem_resource_group.rg.name}"
   location                     = "${data.azurem_resource_group.rg.location}"
@@ -12,9 +12,9 @@ resource "azurerm_mssql_server" "examplesqlserver" {
   }
 }
 
-resource "azurerm_mssql_database" "exampledatabase" {
+resource "azurerm_mssql_database" "main" {
   name           = "${var.environment}-${var.database_name}-${var.region}-sqldb"
-  server_id      = "${azurerm_sql_server.examplesqlserver.id}"
+  server_id      = "${azurerm_sql_server.main.id}"
   collation      = "${var.database_collation}"
   license_type   = "${var.database_license_type}"
   max_size_gb    = "${var.database_max_size_gb}"
@@ -28,9 +28,9 @@ resource "azurerm_mssql_database" "exampledatabase" {
   }
 }
 
-resource "azurerm_monitor_diagnostic_setting" "examplediagnostic" {
+resource "azurerm_monitor_diagnostic_setting" "main" {
   name                       = "${var.environment}-${var.sql_server_name}-${var.region}-sqlserv-ds"
-  target_resource_id         = "${azurerm_mssql_server.examplesqlserver.id}/databases/master"
+  target_resource_id         = "${azurerm_mssql_server.main.id}/databases/master"
   log_analytics_workspace_id = "${data.azurerm_log_analytics_workspace.law.id}"
 
   log {
@@ -55,12 +55,12 @@ resource "azurerm_monitor_diagnostic_setting" "examplediagnostic" {
   }
 }
 
-resource "azurerm_mssql_database_extended_auditing_policy" "example" {
-  database_id            = "${azurerm_mssql_server.examplesqlserver.id}/databases/master"
+resource "azurerm_mssql_database_extended_auditing_policy" "main" {
+  database_id            = "${azurerm_mssql_server.main.id}/databases/master"
   log_monitoring_enabled = true
 }
 
-resource "azurerm_mssql_server_extended_auditing_policy" "example" {
-  server_id              = "${azurerm_mssql_server.examplesqlserver.id}"
+resource "azurerm_mssql_server_extended_auditing_policy" "main" {
+  server_id              = "${azurerm_mssql_server.main.id}"
   log_monitoring_enabled = true
 }

@@ -1,5 +1,5 @@
 resource "azurerm_application_gateway" "network" {
-  name                = "${var.app_gateway_name}"
+  name                = "${var.environment}-${var.app_gateway_name}-${var.region}-appgw"
   resource_group_name = "${data.azurerm_resource_group.rg.name}"
   location            = "${data.azurerm_resource_group.rg.location}"
 
