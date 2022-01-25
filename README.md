@@ -13,4 +13,5 @@
 - [Azure Sql Server and database](azure_sql_server_and_database/README.md)
 - [Azure Virtual Network](azure_virtual_network/README.md)
 - [Azure Kubernetes Service + Application Gateway Ingress Controller](azure_aks_with_agic/README.md)
-- [Azure Resource Group](azure_resource_groups/README.md)
+- [Azure Resource Group](azure_resource_groups/README.md) 
+- [Azure Virtual Machine Scale Set](azure_vm_scaleset/README.md)
